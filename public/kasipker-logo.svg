@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGrad" x1="24" y1="30" x2="96" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B3A6D" />
+      <stop offset="1" stop-color="#1856A1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="22" y1="22" x2="98" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C49A3C" />
+      <stop offset="1" stop-color="#E8C76A" />
+    </linearGradient>
+  </defs>
+  <rect x="18" y="48" width="14" height="40" rx="7" fill="url(#blueGrad)" />
+  <rect x="36" y="34" width="14" height="54" rx="7" fill="url(#blueGrad)" />
+  <rect x="54" y="20" width="14" height="68" rx="7" fill="url(#blueGrad)" />
+  <rect x="72" y="30" width="14" height="58" rx="7" fill="url(#blueGrad)" />
+  <path d="M34 62 L60 36 L86 62" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round" />
+  <path d="M79 35 L94 35 L94 50" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round" />
+  <path d="M66 78 C78 68, 96 72, 94 54" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls c:/Users/acer/Site-1/)",
+      "Read(//c/Users/acer/Site-1/**)",
+      "Bash(npm run *)"
+    ]
+  }
+}

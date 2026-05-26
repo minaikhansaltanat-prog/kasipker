@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: var(--font-sans), sans-serif;
+  font-feature-settings: 'cv02' on, 'ss01' on;
+  background-color: #0A0A0A;
+  color: #F5F0E8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(196,154,60,0.08), transparent 15%),
+    radial-gradient(circle at 18% 12%, rgba(232,199,106,0.08), transparent 14%),
+    linear-gradient(180deg, #090909 0%, #0A0A0A 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #E8C76A;
+  color: #0A0A0A;
+}
+
+button,
+a {
+  transition: all 0.35s ease;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(232, 199, 106, 0.7);
+  outline-offset: 4px;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.04em;
+}
+
+::before, ::after {
+  box-sizing: inherit;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-premium;
+  }
+
+  .text-golden {
+    color: #C49A3C;
+  }
+
+  .border-golden {
+    border-color: rgba(196, 154, 60, 0.35);
+  }
+
+  .bg-golden-soft {
+    background: rgba(196, 154, 60, 0.08);
+  }
+
+  .glass-button {
+    @apply inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold tracking-widest uppercase text-brand-text backdrop-blur-xl shadow-glow;
+  }
+}
