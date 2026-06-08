@@ -6,8 +6,12 @@ const nextConfig = {
   output: 'export',
   basePath: isGithubPages ? `/${repoName}` : '',
   assetPrefix: isGithubPages ? `/${repoName}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : '',
+  },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './lib/imageLoader.js',
     remotePatterns: [
       {
         protocol: 'https',
