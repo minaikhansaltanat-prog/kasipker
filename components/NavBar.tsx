@@ -83,7 +83,7 @@ export function NavBar() {
 
             {/* CTA button — desktop only */}
             <a
-              href="https://wa.me/77478483098"
+              href="https://wa.me/77053271591"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden btn-primary text-xs px-4 py-2.5 sm:inline-flex"
@@ -127,7 +127,7 @@ export function NavBar() {
             </nav>
             <div className="mt-4">
               <a
-                href="https://wa.me/77478483098"
+                href="https://wa.me/77053271591"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full justify-center text-xs py-2.5"

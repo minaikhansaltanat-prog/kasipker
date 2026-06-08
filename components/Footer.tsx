@@ -69,14 +69,14 @@ export function Footer() {
             {/* Social / contact */}
             <div className="mt-6 flex flex-col gap-3">
               <a
-                href="tel:+77478483098"
+                href="tel:+77053271591"
                 className="flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-green transition-colors"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-base">📞</span>
                 {f.phone}
               </a>
               <a
-                href="https://wa.me/77478483098"
+                href="https://wa.me/77053271591"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm font-semibold text-white hover:text-brand-green transition-colors"
@@ -126,7 +126,7 @@ export function Footer() {
               Тегін консультация алып, сіздің балабақшаңызға арнап есептейміз.
             </p>
             <a
-              href="https://wa.me/77478483098"
+              href="https://wa.me/77053271591"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full justify-center text-xs py-2.5"

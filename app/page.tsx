@@ -87,8 +87,9 @@ export default function Home() {
     setSubmitted(true);
   };
 
-  const WA_LINK = 'https://wa.me/77478483098';
-  const PHONE = '+7 747 848 30 98';
+  const WA_LINK = 'https://wa.me/77053271591';
+  const PHONE = '+7 705 327 1591';
+  const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <main className="overflow-x-hidden">
@@ -803,7 +804,7 @@ export default function Home() {
               >
                 <div className="overflow-hidden rounded-t-3xl bg-black">
                   <video
-                    src="/videos/otzyv1.mp4"
+                    src={`${BASE_PATH}/videos/otzyv1.mp4`}
                     controls
                     playsInline
                     preload="metadata"
@@ -1034,7 +1035,7 @@ export default function Home() {
                     </div>
                     {/* Hidden real audio element */}
                     {item.src && (
-                      <audio id={`audio-${i}`} src={item.src} preload="none" className="hidden" />
+                      <audio id={`audio-${i}`} src={`${BASE_PATH}${item.src}`} preload="none" className="hidden" />
                     )}
                   </div>
 
