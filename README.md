@@ -1,32 +1,24 @@
-# KASIPKER Premium Website
+# AZYQ — корпоративтік сайт
 
-Премиальный Next.js сайт для бизнес-альянса KASIPKER.
+Алматыдағы балабақшаларға тамақ жеткізу қызметі AZYQ-тың Next.js 14 негізіндегі корпоративтік сайты.
 
-## Установка
-
-1. Убедитесь, что установлен Node.js 18+.
-2. В корне проекта выполните:
+## Орнату
 
 ```bash
 npm install
 ```
 
-## Запуск
+## Әзірлеу режимінде іске қосу
 
 ```bash
 npm run dev
 ```
 
-Откройте http://localhost:3000
+Браузерде ашыңыз: http://localhost:3000
 
-## Структура
+## GitHub Pages-ке деплой
 
-- `app/page.tsx` — главная страница
-- `app/about/page.tsx` — страница "О клубе"
-- `app/services/page.tsx` — страница услуг
-- `app/clusters/page.tsx` — страница кластеров
-- `app/membership/page.tsx` — страница membership
-- `app/international/page.tsx` — страницы международных отношений
-- `app/faces/page.tsx` — страницы лиц сообщества
-- `app/contact/page.tsx` — контактная страница
-- `components/` — общие премиальные UI-блоки
+Сайт `master`/`main` тармағына push жасаған сайын GitHub Actions арқылы автоматты түрде құрастырылып,
+GitHub Pages-ке жарияланады (`.github/workflows/deploy.yml`).
+
+Сайт мына мекенжайда қолжетімді: https://minaikhansaltanat-prog.github.io/azyqcompany/
