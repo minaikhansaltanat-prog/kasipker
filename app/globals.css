@@ -172,6 +172,16 @@ button:focus-visible, a:focus-visible {
   50% { opacity: 0; transform: scale(1.25); }
 }
 
+/* ── AUDIO WAVEFORM ANIMATION ── */
+@keyframes audio-wave {
+  0%, 100% { transform: scaleY(0.45); opacity: 0.7; }
+  50%       { transform: scaleY(1.15); opacity: 1; }
+}
+.audio-bar-playing {
+  animation: audio-wave var(--anim-dur, 0.7s) ease-in-out infinite;
+  transform-origin: center;
+}
+
 /* ── REVIEWS CAROUSEL ── */
 .reviews-carousel {
   display: flex;

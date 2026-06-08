@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
 import { useTranslations } from '@/components/useTranslations';
+import AudioPlayer from '@/components/AudioPlayer';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -997,58 +998,13 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className="card overflow-hidden"
                 >
-                  {/* Waveform visual */}
-                  <div className="mb-5 rounded-2xl bg-brand-green-light p-4">
-                    <div className="mb-4 flex items-center gap-3">
-                      {/* Play button */}
-                      <button
-                        onClick={() => {
-                          if (item.src) {
-                            const el = document.getElementById(`audio-${i}`) as HTMLAudioElement | null;
-                            if (el) el.paused ? el.play() : el.pause();
-                          }
-                        }}
-                        className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-brand-green text-white shadow-green hover:bg-brand-green-dark transition-colors"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </button>
-                      {/* Waveform bars */}
-                      <div className="flex flex-1 items-end gap-[3px] h-10">
-                        {[4, 8, 6, 12, 10, 7, 14, 9, 5, 11, 8, 13, 6, 10, 7, 12, 5, 9, 11, 4, 8, 14, 6, 10, 7].map((h, j) => (
-                          <div
-                            key={j}
-                            className={`w-1 rounded-full flex-shrink-0 ${item.src ? 'bg-brand-green/60' : 'bg-brand-green/25'}`}
-                            style={{ height: `${h * 2.8}px` }}
-                          />
-                        ))}
-                      </div>
-                      {/* Duration */}
-                      <span className="text-xs font-bold text-brand-green-dark flex-shrink-0">{item.duration}</span>
-                    </div>
-                    {/* Progress bar */}
-                    <div className="h-1 rounded-full bg-brand-green/20">
-                      <div className={`h-1 rounded-full bg-brand-green ${item.src ? 'w-0' : 'w-1/3'}`} />
-                    </div>
-                    {/* Hidden real audio element */}
-                    {item.src && (
-                      <audio id={`audio-${i}`} src={`${BASE_PATH}${item.src}`} preload="none" className="hidden" />
-                    )}
-                  </div>
-
-                  {/* Person info */}
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-green-light text-brand-green-dark font-bold text-sm">
-                      {item.name[0]}
-                    </div>
-                    <div>
-                      <p className="text-sm font-extrabold text-brand-dark">{item.name}</p>
-                      <p className="text-xs text-brand-muted">{item.role}</p>
-                    </div>
-                  </div>
+                  <AudioPlayer
+                    src={item.src ? `${BASE_PATH}${item.src}` : ''}
+                    name={item.name}
+                    role={item.role}
+                    fallbackDuration={item.duration}
+                  />
                 </motion.div>
               ))}
             </div>
