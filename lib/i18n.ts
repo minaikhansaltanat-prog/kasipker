@@ -183,7 +183,7 @@ export const translations = {
       audioItems: [
         { name: 'Натали директор', role: '"Садик Жансая-Сат" балабақшасы', duration: '0:27', src: '/audio/33.mp3' },
         { name: '"Центр забота" балабақша директорының отзывы', role: 'Алматы қаласы', duration: '0:16', src: '/audio/44.mp3' },
-        { name: 'Балабақша иесі', role: 'Алматы қаласы', duration: '1:12', src: '' },
+        { name: '"Садик Ақтерек" балабақшасы директоры', role: 'Алматы қаласы', duration: '0:56', src: '/audio/01.mp3' },
       ],
     },
     gift: {
@@ -429,7 +429,7 @@ export const translations = {
       audioItems: [
         { name: 'Натали директор', role: 'Д/с "Садик Жансая-Сат"', duration: '0:27', src: '/audio/33.mp3' },
         { name: 'Отзыв директора детского сада "Центр Забота"', role: 'г. Алматы', duration: '0:16', src: '/audio/44.mp3' },
-        { name: 'Владелец детского сада', role: 'г. Алматы', duration: '1:12', src: '' },
+        { name: 'Директор д/с "Садик Актерек"', role: 'г. Алматы', duration: '0:56', src: '/audio/01.mp3' },
       ],
     },
     gift: {
